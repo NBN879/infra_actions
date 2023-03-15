@@ -70,6 +70,6 @@ jobs:
           script: |
             # Выполняет pull образа с DockerHub
             sudo docker pull blacksun9/infra_actions
-            #остановка всех контейнеров
+            # остановка всех контейнеров
             sudo docker stop $(sudo docker ps -a -q)
             sudo docker run --rm -d -p 5000:5000 blacksun9/infra_actions
